@@ -27,7 +27,7 @@ eula_accept()
 
 which java &> /dev/null \
     &&  { echo -e '\E[32mJavaJDK:  zainstalowana:\E[0m'; $(java -version); }  \
-    ||  { echo -e '\E[32mInstalacja JavaJDK:\E[0m'; apt-get install -y openjdk-11-jre-headless || exit 1; }
+    ||  { echo -e '\E[32mInstalacja JavaJDK:\E[0m'; apt-get install -y openjdk-19-jre-headless || exit 1; }
     
 
 if [ ! -f eula.txt ] ;
